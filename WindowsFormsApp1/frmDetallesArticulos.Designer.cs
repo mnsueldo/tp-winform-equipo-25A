@@ -35,6 +35,8 @@
             this.lblCategoriaValor = new System.Windows.Forms.Label();
             this.lblPrecioValor = new System.Windows.Forms.Label();
             this.btnCerrar = new System.Windows.Forms.Button();
+            this.pbxDetalles = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxDetalles)).BeginInit();
             this.SuspendLayout();
             // 
             // lblCodigoValor
@@ -93,7 +95,7 @@
             // 
             // btnCerrar
             // 
-            this.btnCerrar.Location = new System.Drawing.Point(214, 435);
+            this.btnCerrar.Location = new System.Drawing.Point(198, 468);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(121, 31);
             this.btnCerrar.TabIndex = 6;
@@ -101,11 +103,20 @@
             this.btnCerrar.UseVisualStyleBackColor = true;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
+            // pbxDetalles
+            // 
+            this.pbxDetalles.Location = new System.Drawing.Point(106, 219);
+            this.pbxDetalles.Name = "pbxDetalles";
+            this.pbxDetalles.Size = new System.Drawing.Size(316, 230);
+            this.pbxDetalles.TabIndex = 7;
+            this.pbxDetalles.TabStop = false;
+            // 
             // frmDetallesArticulos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(548, 523);
+            this.Controls.Add(this.pbxDetalles);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.lblPrecioValor);
             this.Controls.Add(this.lblCategoriaValor);
@@ -117,6 +128,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmVerDetalles";
             this.Load += new System.EventHandler(this.frmDetallesArticulos_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pbxDetalles)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -131,5 +143,6 @@
         private System.Windows.Forms.Label lblCategoriaValor;
         private System.Windows.Forms.Label lblPrecioValor;
         private System.Windows.Forms.Button btnCerrar;
+        private System.Windows.Forms.PictureBox pbxDetalles;
     }
 }

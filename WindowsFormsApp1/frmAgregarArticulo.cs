@@ -85,28 +85,17 @@ namespace WindowsFormsApp1
                 
                 articulo.Marca = (Marca)cboMarcas.SelectedItem;
                 articulo.Categoria = (Categoria)cboCategorias.SelectedItem;
-
-                
-                if (!string.IsNullOrEmpty(url))
-                {
-                    if (articulo.Imagenes == null)
-                        articulo.Imagenes = new List<string>();
-                    if (!articulo.Imagenes.Contains(url))
-                        articulo.Imagenes.Add(url);
-                }
-
+                                
                 
                 if (articulo.Id != 0)
                 {
-                    negocio.modificar(articulo);
-                    //negocio.guardarImagenes(articulo.Id, articulo.Imagenes);
+                    negocio.modificar(articulo);                    
                     MessageBox.Show("Modificado exitosamente");
                 }
                 
                 else
                 {
-                    negocio.agregar(articulo);
-                    //negocio.guardarImagenes(nuevoId, articulo.Imagenes);
+                    negocio.agregar(articulo);                    
                     MessageBox.Show("Agregado exitosamente");
                 }
                                 
@@ -182,10 +171,7 @@ namespace WindowsFormsApp1
                 
                 MessageBox.Show(ex.ToString());
             }
-
-            //articuloActual = articulo;
-            //indiceImagenActual = 0;
-            //MostrarImagenActual();
+                        
         }
                 
     }

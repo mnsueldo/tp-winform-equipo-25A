@@ -114,8 +114,7 @@ namespace negocio
             {
 
                 datos.setearConsulta(
-                    "DELETE FROM IMAGENES WHERE IdArticulo = @id; " +
-                    "DELETE FROM ARTICULOS WHERE Id = @id;"
+                    "DELETE FROM IMAGENES WHERE IdArticulo = @id; " + "DELETE FROM ARTICULOS WHERE Id = @id;"
                 );
                 datos.setearParametro("@id", id);
                 datos.ejecutarAccion();
@@ -137,15 +136,7 @@ namespace negocio
 
             try
             {
-                string consulta = @"
-SELECT A.Id, A.Codigo, A.Nombre, A.Descripcion, A.Precio,
-       C.Descripcion AS Categoria, M.Descripcion AS Marca,
-       A.IdCategoria, A.IdMarca
-FROM ARTICULOS AS A
-INNER JOIN CATEGORIAS AS C ON C.Id = A.IdCategoria
-INNER JOIN MARCAS     AS M ON M.Id = A.IdMarca
-LEFT JOIN  IMAGENES   AS I ON A.Id = I.IdArticulo
-WHERE 1=1 ";
+                string consulta = @"SELECT A.Id, A.Codigo, A.Nombre, A.Descripcion, A.Precio, C.Descripcion AS Categoria, M.Descripcion AS Marca, A.IdCategoria, A.IdMarca FROM ARTICULOS AS A INNER JOIN CATEGORIAS AS C ON C.Id = A.IdCategoriaINNER JOIN MARCAS AS M ON M.Id = A.IdMarca LEFT JOIN  IMAGENES   AS I ON A.Id = I.IdArticulo WHERE 1=1 ";
 
                 if (campo == "Precio")
                 {
