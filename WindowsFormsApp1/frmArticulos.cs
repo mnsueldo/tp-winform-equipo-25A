@@ -263,7 +263,7 @@ namespace WindowsFormsApp1
                 return;
             }
 
-            frmDetallesArticulos agregar = new frmDetallesArticulos();
+            frmDetallesArticulos agregar = new frmDetallesArticulos(seleccionado);
             agregar.ShowDialog(this);
             cargar();
             
