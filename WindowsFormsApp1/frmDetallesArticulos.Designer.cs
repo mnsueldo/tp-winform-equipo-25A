@@ -36,6 +36,8 @@
             this.lblPrecioValor = new System.Windows.Forms.Label();
             this.btnCerrar = new System.Windows.Forms.Button();
             this.pbxDetalles = new System.Windows.Forms.PictureBox();
+            this.btnSiguiente = new System.Windows.Forms.Button();
+            this.btnAtras = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbxDetalles)).BeginInit();
             this.SuspendLayout();
             // 
@@ -95,7 +97,7 @@
             // 
             // btnCerrar
             // 
-            this.btnCerrar.Location = new System.Drawing.Point(198, 468);
+            this.btnCerrar.Location = new System.Drawing.Point(225, 598);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(121, 31);
             this.btnCerrar.TabIndex = 6;
@@ -108,14 +110,38 @@
             this.pbxDetalles.Location = new System.Drawing.Point(106, 219);
             this.pbxDetalles.Name = "pbxDetalles";
             this.pbxDetalles.Size = new System.Drawing.Size(316, 230);
+            this.pbxDetalles.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbxDetalles.TabIndex = 7;
             this.pbxDetalles.TabStop = false;
+            // 
+            // btnSiguiente
+            // 
+            this.btnSiguiente.Location = new System.Drawing.Point(307, 511);
+            this.btnSiguiente.Name = "btnSiguiente";
+            this.btnSiguiente.Size = new System.Drawing.Size(75, 23);
+            this.btnSiguiente.TabIndex = 8;
+            this.btnSiguiente.Text = "siguiente";
+            this.btnSiguiente.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnSiguiente.UseVisualStyleBackColor = true;
+            this.btnSiguiente.Click += new System.EventHandler(this.btnSiguiente_Click);
+            // 
+            // btnAtras
+            // 
+            this.btnAtras.Location = new System.Drawing.Point(160, 511);
+            this.btnAtras.Name = "btnAtras";
+            this.btnAtras.Size = new System.Drawing.Size(75, 23);
+            this.btnAtras.TabIndex = 9;
+            this.btnAtras.Text = "atras";
+            this.btnAtras.UseVisualStyleBackColor = true;
+            this.btnAtras.Click += new System.EventHandler(this.btnAtras_Click_1);
             // 
             // frmDetallesArticulos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(548, 523);
+            this.ClientSize = new System.Drawing.Size(583, 654);
+            this.Controls.Add(this.btnAtras);
+            this.Controls.Add(this.btnSiguiente);
             this.Controls.Add(this.pbxDetalles);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.lblPrecioValor);
@@ -144,5 +170,7 @@
         private System.Windows.Forms.Label lblPrecioValor;
         private System.Windows.Forms.Button btnCerrar;
         private System.Windows.Forms.PictureBox pbxDetalles;
+        private System.Windows.Forms.Button btnSiguiente;
+        private System.Windows.Forms.Button btnAtras;
     }
 }

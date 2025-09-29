@@ -34,7 +34,6 @@
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnCategorias = new System.Windows.Forms.Button();
             this.btnMenuMarcas = new System.Windows.Forms.Button();
-            this.pbxArticulos = new System.Windows.Forms.PictureBox();
             this.btnDetalles = new System.Windows.Forms.Button();
             this.lblFiltro = new System.Windows.Forms.Label();
             this.txtFiltro = new System.Windows.Forms.TextBox();
@@ -46,8 +45,11 @@
             this.cboCampo = new System.Windows.Forms.ComboBox();
             this.cboCriterio = new System.Windows.Forms.ComboBox();
             this.txtFiltroAvanzado = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnAtras = new System.Windows.Forms.Button();
+            this.btnAdelante = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvArticulos)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxArticulos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvArticulos
@@ -62,6 +64,7 @@
             this.dgvArticulos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvArticulos.Size = new System.Drawing.Size(577, 187);
             this.dgvArticulos.TabIndex = 0;
+            this.dgvArticulos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvArticulos_CellClick);
             // 
             // btnAgregar
             // 
@@ -95,7 +98,7 @@
             // 
             // btnCategorias
             // 
-            this.btnCategorias.Location = new System.Drawing.Point(613, 49);
+            this.btnCategorias.Location = new System.Drawing.Point(347, 46);
             this.btnCategorias.Name = "btnCategorias";
             this.btnCategorias.Size = new System.Drawing.Size(110, 27);
             this.btnCategorias.TabIndex = 4;
@@ -105,21 +108,13 @@
             // 
             // btnMenuMarcas
             // 
-            this.btnMenuMarcas.Location = new System.Drawing.Point(730, 49);
+            this.btnMenuMarcas.Location = new System.Drawing.Point(486, 46);
             this.btnMenuMarcas.Name = "btnMenuMarcas";
             this.btnMenuMarcas.Size = new System.Drawing.Size(110, 27);
             this.btnMenuMarcas.TabIndex = 5;
             this.btnMenuMarcas.Text = "Menú Marcas";
             this.btnMenuMarcas.UseVisualStyleBackColor = true;
             this.btnMenuMarcas.Click += new System.EventHandler(this.btnMenuMarcas_Click);
-            // 
-            // pbxArticulos
-            // 
-            this.pbxArticulos.Location = new System.Drawing.Point(613, 82);
-            this.pbxArticulos.Name = "pbxArticulos";
-            this.pbxArticulos.Size = new System.Drawing.Size(321, 187);
-            this.pbxArticulos.TabIndex = 6;
-            this.pbxArticulos.TabStop = false;
             // 
             // btnDetalles
             // 
@@ -221,11 +216,44 @@
             this.txtFiltroAvanzado.Size = new System.Drawing.Size(100, 20);
             this.txtFiltroAvanzado.TabIndex = 17;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(622, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(384, 297);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 18;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // btnAtras
+            // 
+            this.btnAtras.Location = new System.Drawing.Point(730, 315);
+            this.btnAtras.Name = "btnAtras";
+            this.btnAtras.Size = new System.Drawing.Size(75, 23);
+            this.btnAtras.TabIndex = 19;
+            this.btnAtras.Text = "atras";
+            this.btnAtras.UseVisualStyleBackColor = true;
+            this.btnAtras.Click += new System.EventHandler(this.btnAtras_Click);
+            // 
+            // btnAdelante
+            // 
+            this.btnAdelante.Location = new System.Drawing.Point(829, 315);
+            this.btnAdelante.Name = "btnAdelante";
+            this.btnAdelante.Size = new System.Drawing.Size(75, 23);
+            this.btnAdelante.TabIndex = 20;
+            this.btnAdelante.Text = "siguiente";
+            this.btnAdelante.UseVisualStyleBackColor = true;
+            this.btnAdelante.Click += new System.EventHandler(this.btnAdelante_Click);
+            // 
             // frmArticulos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(961, 368);
+            this.ClientSize = new System.Drawing.Size(1018, 368);
+            this.Controls.Add(this.btnAdelante);
+            this.Controls.Add(this.btnAtras);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtFiltroAvanzado);
             this.Controls.Add(this.cboCriterio);
             this.Controls.Add(this.cboCampo);
@@ -237,7 +265,6 @@
             this.Controls.Add(this.txtFiltro);
             this.Controls.Add(this.lblFiltro);
             this.Controls.Add(this.btnDetalles);
-            this.Controls.Add(this.pbxArticulos);
             this.Controls.Add(this.btnMenuMarcas);
             this.Controls.Add(this.btnCategorias);
             this.Controls.Add(this.btnEliminar);
@@ -249,7 +276,7 @@
             this.Text = "frmArticulos";
             this.Load += new System.EventHandler(this.frmArticulos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvArticulos)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxArticulos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -263,7 +290,6 @@
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnCategorias;
         private System.Windows.Forms.Button btnMenuMarcas;
-        private System.Windows.Forms.PictureBox pbxArticulos;
         private System.Windows.Forms.Button btnDetalles;
         private System.Windows.Forms.Label lblFiltro;
         private System.Windows.Forms.TextBox txtFiltro;
@@ -275,5 +301,8 @@
         private System.Windows.Forms.ComboBox cboCampo;
         private System.Windows.Forms.ComboBox cboCriterio;
         private System.Windows.Forms.TextBox txtFiltroAvanzado;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnAtras;
+        private System.Windows.Forms.Button btnAdelante;
     }
 }

@@ -44,8 +44,6 @@
             this.lblUrlImagen = new System.Windows.Forms.Label();
             this.lblCategoria = new System.Windows.Forms.Label();
             this.lblMarcas = new System.Windows.Forms.Label();
-            this.pbxAgregarArticulo = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxAgregarArticulo)).BeginInit();
             this.SuspendLayout();
             // 
             // btnAceptarArticulo
@@ -184,21 +182,11 @@
             this.lblMarcas.TabIndex = 15;
             this.lblMarcas.Text = "Marca";
             // 
-            // pbxAgregarArticulo
-            // 
-            this.pbxAgregarArticulo.Location = new System.Drawing.Point(418, 84);
-            this.pbxAgregarArticulo.Name = "pbxAgregarArticulo";
-            this.pbxAgregarArticulo.Size = new System.Drawing.Size(385, 220);
-            this.pbxAgregarArticulo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbxAgregarArticulo.TabIndex = 16;
-            this.pbxAgregarArticulo.TabStop = false;
-            // 
             // frmAgregarArticulo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(922, 428);
-            this.Controls.Add(this.pbxAgregarArticulo);
             this.Controls.Add(this.lblMarcas);
             this.Controls.Add(this.lblCategoria);
             this.Controls.Add(this.lblUrlImagen);
@@ -219,7 +207,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmAgregarArticulo";
             this.Load += new System.EventHandler(this.frmAgregarArticulo_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pbxAgregarArticulo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -243,6 +230,5 @@
         private System.Windows.Forms.Label lblUrlImagen;
         private System.Windows.Forms.Label lblCategoria;
         private System.Windows.Forms.Label lblMarcas;
-        private System.Windows.Forms.PictureBox pbxAgregarArticulo;
     }
 }

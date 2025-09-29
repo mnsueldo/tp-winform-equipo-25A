@@ -8,8 +8,7 @@ using System.Data.SqlClient;
 
 namespace negocio
 {
-    public class ArticuloNegocio
-    {
+    public class ArticuloNegocio {
         public List<Articulo> listar()
         {
             List<Articulo> lista = new List<Articulo>();
@@ -17,7 +16,7 @@ namespace negocio
 
             try
             {
-                datos.setearConsulta("SELECT A.Id, A.Codigo, A.Nombre, A.Descripcion, A.Precio, A.IdCategoria, A.IdMarca, C.Descripcion AS Categoria, M.Descripcion AS Marca FROM ARTICULOS AS A INNER JOIN CATEGORIAS AS C ON A.IdCategoria = C.Id INNER JOIN MARCAS AS M ON A.IdMarca = M.Id");
+                datos.setearConsulta("SELECT A.Id, A.Codigo, A.Nombre, A.Descripcion, A.UrlImagen, A.Precio, A.IdCategoria, A.IdMarca, C.Descripcion AS Categoria, M.Descripcion AS Marca FROM ARTICULOS AS A INNER JOIN CATEGORIAS AS C ON A.IdCategoria = C.Id INNER JOIN MARCAS AS M ON A.IdMarca = M.Id;");
                 datos.ejecutarLectura();
 
                 while (datos.Lector.Read())
@@ -28,8 +27,10 @@ namespace negocio
                     aux.Nombre = (string)datos.Lector["Nombre"];
                     aux.Descripcion = (string)datos.Lector["Descripcion"];
 
+
                     if (!(datos.Lector.IsDBNull(datos.Lector.GetOrdinal("Precio"))))
                         aux.Precio = (decimal)datos.Lector["Precio"];
+
 
                     aux.Categoria = new Categoria();
                     aux.Categoria.Id = (int)datos.Lector["IdCategoria"];
@@ -38,7 +39,40 @@ namespace negocio
                     aux.Marca = new Marca();
                     aux.Marca.Id = (int)datos.Lector["IdMarca"];
                     aux.Marca.Descripcion = (string)datos.Lector["Marca"];
-                    
+
+                    lista.Add(aux);
+                }
+
+                return lista;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+        }
+
+        public List<Imagen> getImagenes(int idArticulo) // funcion para las imganes de la lista
+        {
+            List<Imagen> lista = new List<Imagen>();
+            AccesoDatos datos = new AccesoDatos();
+
+            try
+            {
+                datos.setearConsulta($"select id,idArticulo, ImagenUrl from IMAGENES where IdArticulo={idArticulo}");
+                datos.ejecutarLectura();
+
+                while (datos.Lector.Read())
+                {
+                    Imagen aux = new Imagen();
+                    aux.Id = (int)datos.Lector["id"];
+                    aux.IdArticulo = (int)datos.Lector["idArticulo"];   
+                    aux.ImagenUrl = (string)datos.Lector["ImagenUrl"];
+
+
                     lista.Add(aux);
                 }
 
@@ -60,10 +94,11 @@ namespace negocio
 
             try
             {
-                datos.setearConsulta("INSERT into ARTICULOS (Codigo, Nombre, Descripcion,IdCategoria,IdMarca,Precio)values(@Codigo, @Nombre, @Descripcion,@IdCategoria,@IdMarca,@Precio)");
+                datos.setearConsulta("INSERT into ARTICULOS (Codigo, Nombre, Descripcion,UrlImagen, IdCategoria,IdMarca,Precio)values(@Codigo, @Nombre, @Descripcion, @UrlImagen, @IdCategoria,@IdMarca,@Precio)");
                 datos.setearParametro("@Codigo", nuevo.Codigo);
                 datos.setearParametro("@Nombre", nuevo.Nombre);
                 datos.setearParametro("@Descripcion", nuevo.Descripcion);
+                datos.setearParametro("@UrlImagen", nuevo.UrlImagen);
                 datos.setearParametro("@IdCategoria", nuevo.Categoria.Id);
                 datos.setearParametro("@IdMarca", nuevo.Marca.Id);
                 datos.setearParametro("@Precio", nuevo.Precio);
@@ -85,10 +120,11 @@ namespace negocio
             AccesoDatos datos = new AccesoDatos();
             try
             {
-                datos.setearConsulta("update ARTICULOS SET Codigo = @codigo, Nombre = @nombre, Descripcion = @descripcion, IdCategoria = @idCategoria, IdMarca = @idMarca, Precio = @precio Where Id = @id");
+                datos.setearConsulta("update ARTICULOS SET Codigo = @codigo, Nombre = @nombre, Descripcion = @descripcion, UrlImagen = @UrlImagen, IdCategoria = @idCategoria, IdMarca = @idMarca, Precio = @precio Where Id = @id");
                 datos.setearParametro("@Codigo", nuevo.Codigo);
                 datos.setearParametro("@Nombre", nuevo.Nombre);
                 datos.setearParametro("@Descripcion", nuevo.Descripcion);
+                datos.setearParametro("@UrlImagen", nuevo.UrlImagen);
                 datos.setearParametro("@IdCategoria", nuevo.Categoria.Id);
                 datos.setearParametro("@IdMarca", nuevo.Marca.Id);
                 datos.setearParametro("@Precio", nuevo.Precio);
@@ -105,6 +141,7 @@ namespace negocio
                 datos.cerrarConexion();
             }
         }
+
 
 
         public void eliminarFisico(int id)
@@ -236,6 +273,8 @@ namespace negocio
             {
                 datos.cerrarConexion();
             }
+
+
         }
 
 

@@ -1,18 +1,78 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Casa\\Desktop\\UTN\\3re cuatrimestre\\Programacion III\\Proyectos\\Actividad 2\\tp-winform-equipo-25-A\\TPWinForm_equipo-25A\\tp-winform-equipo-25A\\",
+  "WorkspaceRootPath": "C:\\Users\\pc\\Desktop\\Git repo WinForms\\tp-winform-equipo-25A\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4C74739A-A72E-4784-8D43-ECB505978051}|WindowsFormsApp1\\winform-app.csproj|c:\\users\\casa\\desktop\\utn\\3re cuatrimestre\\programacion iii\\proyectos\\actividad 2\\tp-winform-equipo-25-a\\tpwinform_equipo-25a\\tp-winform-equipo-25a\\windowsformsapp1\\frmarticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C74739A-A72E-4784-8D43-ECB505978051}|WindowsFormsApp1\\winform-app.csproj|solutionrelative:windowsformsapp1\\frmarticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C74739A-A72E-4784-8D43-ECB505978051}|WindowsFormsApp1\\winform-app.csproj|C:\\Users\\Casa\\Desktop\\UTN\\3re cuatrimestre\\Programacion III\\Proyectos\\Actividad 2\\tp-winform-equipo-25-A\\TPWinForm_equipo-25A\\tp-winform-equipo-25A\\windowsformsapp1\\frmarticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{4C74739A-A72E-4784-8D43-ECB505978051}|WindowsFormsApp1\\winform-app.csproj|c:\\users\\pc\\desktop\\git repo winforms\\tp-winform-equipo-25a\\windowsformsapp1\\frmarticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4C74739A-A72E-4784-8D43-ECB505978051}|WindowsFormsApp1\\winform-app.csproj|solutionrelative:windowsformsapp1\\frmarticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C74739A-A72E-4784-8D43-ECB505978051}|WindowsFormsApp1\\winform-app.csproj|c:\\users\\casa\\desktop\\utn\\3re cuatrimestre\\programacion iii\\proyectos\\actividad 2\\tp-winform-equipo-25-a\\tpwinform_equipo-25a\\tp-winform-equipo-25a\\windowsformsapp1\\frmagregararticulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4C74739A-A72E-4784-8D43-ECB505978051}|WindowsFormsApp1\\winform-app.csproj|C:\\Users\\pc\\Desktop\\Git repo WinForms\\tp-winform-equipo-25A\\windowsformsapp1\\frmdetallesarticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C74739A-A72E-4784-8D43-ECB505978051}|WindowsFormsApp1\\winform-app.csproj|solutionrelative:windowsformsapp1\\frmdetallesarticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C74739A-A72E-4784-8D43-ECB505978051}|WindowsFormsApp1\\winform-app.csproj|C:\\Users\\pc\\Desktop\\Git repo WinForms\\tp-winform-equipo-25A\\windowsformsapp1\\frmdetallesarticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4C74739A-A72E-4784-8D43-ECB505978051}|WindowsFormsApp1\\winform-app.csproj|solutionrelative:windowsformsapp1\\frmdetallesarticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C74739A-A72E-4784-8D43-ECB505978051}|WindowsFormsApp1\\winform-app.csproj|C:\\Users\\pc\\Desktop\\Git repo WinForms\\tp-winform-equipo-25A\\windowsformsapp1\\frmarticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C74739A-A72E-4784-8D43-ECB505978051}|WindowsFormsApp1\\winform-app.csproj|solutionrelative:windowsformsapp1\\frmarticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B667BFF-6AEC-4D38-981B-1E34C3631A34}|negocio\\negocio.csproj|C:\\Users\\pc\\Desktop\\Git repo WinForms\\tp-winform-equipo-25A\\negocio\\articulonegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B667BFF-6AEC-4D38-981B-1E34C3631A34}|negocio\\negocio.csproj|solutionrelative:negocio\\articulonegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C74739A-A72E-4784-8D43-ECB505978051}|WindowsFormsApp1\\winform-app.csproj|C:\\Users\\pc\\Desktop\\Git repo WinForms\\tp-winform-equipo-25A\\windowsformsapp1\\frmagregarmarca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4C74739A-A72E-4784-8D43-ECB505978051}|WindowsFormsApp1\\winform-app.csproj|solutionrelative:windowsformsapp1\\frmagregarmarca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C74739A-A72E-4784-8D43-ECB505978051}|WindowsFormsApp1\\winform-app.csproj|C:\\Users\\pc\\Desktop\\Git repo WinForms\\tp-winform-equipo-25A\\windowsformsapp1\\frmagregarcategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4C74739A-A72E-4784-8D43-ECB505978051}|WindowsFormsApp1\\winform-app.csproj|solutionrelative:windowsformsapp1\\frmagregarcategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C74739A-A72E-4784-8D43-ECB505978051}|WindowsFormsApp1\\winform-app.csproj|C:\\Users\\pc\\Desktop\\Git repo WinForms\\tp-winform-equipo-25A\\windowsformsapp1\\frmagregararticulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4C74739A-A72E-4784-8D43-ECB505978051}|WindowsFormsApp1\\winform-app.csproj|solutionrelative:windowsformsapp1\\frmagregararticulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60DF92AE-222D-425C-A723-647D591378A8}|dominio\\dominio.csproj|C:\\Users\\pc\\Desktop\\Git repo WinForms\\tp-winform-equipo-25A\\dominio\\imagen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60DF92AE-222D-425C-A723-647D591378A8}|dominio\\dominio.csproj|solutionrelative:dominio\\imagen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60DF92AE-222D-425C-A723-647D591378A8}|dominio\\dominio.csproj|C:\\Users\\pc\\Desktop\\Git repo WinForms\\tp-winform-equipo-25A\\dominio\\articulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60DF92AE-222D-425C-A723-647D591378A8}|dominio\\dominio.csproj|solutionrelative:dominio\\articulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B667BFF-6AEC-4D38-981B-1E34C3631A34}|negocio\\negocio.csproj|C:\\Users\\pc\\Desktop\\Git repo WinForms\\tp-winform-equipo-25A\\negocio\\accesodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B667BFF-6AEC-4D38-981B-1E34C3631A34}|negocio\\negocio.csproj|solutionrelative:negocio\\accesodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C74739A-A72E-4784-8D43-ECB505978051}|WindowsFormsApp1\\winform-app.csproj|C:\\Users\\pc\\Desktop\\Git repo WinForms\\tp-winform-equipo-25A\\windowsformsapp1\\frmarticulos.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C74739A-A72E-4784-8D43-ECB505978051}|WindowsFormsApp1\\winform-app.csproj|solutionrelative:windowsformsapp1\\frmarticulos.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C74739A-A72E-4784-8D43-ECB505978051}|WindowsFormsApp1\\winform-app.csproj|C:\\Users\\pc\\Desktop\\Git repo WinForms\\tp-winform-equipo-25A\\windowsformsapp1\\frmagregararticulo.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C74739A-A72E-4784-8D43-ECB505978051}|WindowsFormsApp1\\winform-app.csproj|solutionrelative:windowsformsapp1\\frmagregararticulo.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C74739A-A72E-4784-8D43-ECB505978051}|WindowsFormsApp1\\winform-app.csproj|C:\\Users\\pc\\Desktop\\Git repo WinForms\\tp-winform-equipo-25A\\windowsformsapp1\\frmagregararticulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4C74739A-A72E-4784-8D43-ECB505978051}|WindowsFormsApp1\\winform-app.csproj|solutionrelative:windowsformsapp1\\frmagregararticulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B667BFF-6AEC-4D38-981B-1E34C3631A34}|negocio\\negocio.csproj|C:\\Users\\pc\\Desktop\\Git repo WinForms\\tp-winform-equipo-25A\\negocio\\categorianegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B667BFF-6AEC-4D38-981B-1E34C3631A34}|negocio\\negocio.csproj|solutionrelative:negocio\\categorianegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C74739A-A72E-4784-8D43-ECB505978051}|WindowsFormsApp1\\winform-app.csproj|C:\\Users\\pc\\Desktop\\Git repo WinForms\\tp-winform-equipo-25A\\windowsformsapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C74739A-A72E-4784-8D43-ECB505978051}|WindowsFormsApp1\\winform-app.csproj|solutionrelative:windowsformsapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B667BFF-6AEC-4D38-981B-1E34C3631A34}|negocio\\negocio.csproj|C:\\Users\\pc\\Desktop\\Git repo WinForms\\tp-winform-equipo-25A\\negocio\\marcanegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B667BFF-6AEC-4D38-981B-1E34C3631A34}|negocio\\negocio.csproj|solutionrelative:negocio\\marcanegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60DF92AE-222D-425C-A723-647D591378A8}|dominio\\dominio.csproj|C:\\Users\\pc\\Desktop\\Git repo WinForms\\tp-winform-equipo-25A\\dominio\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60DF92AE-222D-425C-A723-647D591378A8}|dominio\\dominio.csproj|solutionrelative:dominio\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,53 +82,220 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "frmArticulos.cs",
-              "DocumentMoniker": "C:\\Users\\Casa\\Desktop\\UTN\\3re cuatrimestre\\Programacion III\\Proyectos\\Actividad 2\\tp-winform-equipo-25-A\\TPWinForm_equipo-25A\\tp-winform-equipo-25A\\WindowsFormsApp1\\frmArticulos.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp1\\frmArticulos.cs",
-              "ToolTip": "C:\\Users\\Casa\\Desktop\\UTN\\3re cuatrimestre\\Programacion III\\Proyectos\\Actividad 2\\tp-winform-equipo-25-A\\TPWinForm_equipo-25A\\tp-winform-equipo-25A\\WindowsFormsApp1\\frmArticulos.cs",
-              "RelativeToolTip": "WindowsFormsApp1\\frmArticulos.cs",
-              "ViewState": "AgIAAMEAAAAAAAAAAAAUwAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "frmDetallesArticulos.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\Git repo WinForms\\tp-winform-equipo-25A\\WindowsFormsApp1\\frmDetallesArticulos.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\frmDetallesArticulos.cs",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\Git repo WinForms\\tp-winform-equipo-25A\\WindowsFormsApp1\\frmDetallesArticulos.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\frmDetallesArticulos.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAAAEwAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T21:53:10.134Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-29T17:19:50.932Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "frmAgregarArticulo.cs",
-              "DocumentMoniker": "C:\\Users\\Casa\\Desktop\\UTN\\3re cuatrimestre\\Programacion III\\Proyectos\\Actividad 2\\tp-winform-equipo-25-A\\TPWinForm_equipo-25A\\tp-winform-equipo-25A\\WindowsFormsApp1\\frmAgregarArticulo.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp1\\frmAgregarArticulo.cs",
-              "ToolTip": "C:\\Users\\Casa\\Desktop\\UTN\\3re cuatrimestre\\Programacion III\\Proyectos\\Actividad 2\\tp-winform-equipo-25-A\\TPWinForm_equipo-25A\\tp-winform-equipo-25A\\WindowsFormsApp1\\frmAgregarArticulo.cs",
-              "RelativeToolTip": "WindowsFormsApp1\\frmAgregarArticulo.cs",
-              "ViewState": "AgIAAJEAAAAAAAAAAAAcwFYAAABLAAAAAAAAAA==",
+              "Title": "frmDetallesArticulos.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\Git repo WinForms\\tp-winform-equipo-25A\\WindowsFormsApp1\\frmDetallesArticulos.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\frmDetallesArticulos.cs",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\Programacion III\\Grupo 25A\\tp-winform-equipo-25A-master\\WindowsFormsApp1\\frmDetallesArticulos.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\Programacion III\\Grupo 25A\\tp-winform-equipo-25A-master\\WindowsFormsApp1\\frmDetallesArticulos.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T21:45:21.758Z",
+              "WhenOpened": "2025-09-29T17:19:30.012Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "frmAgregarArticulo.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\Git repo WinForms\\tp-winform-equipo-25A\\WindowsFormsApp1\\frmAgregarArticulo.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\frmAgregarArticulo.cs",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\Programacion III\\Grupo 25A\\tp-winform-equipo-25A-master\\WindowsFormsApp1\\frmAgregarArticulo.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\Programacion III\\Grupo 25A\\tp-winform-equipo-25A-master\\WindowsFormsApp1\\frmAgregarArticulo.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-28T15:47:28.569Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ArticuloNegocio.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\Git repo WinForms\\tp-winform-equipo-25A\\negocio\\ArticuloNegocio.cs",
+              "RelativeDocumentMoniker": "negocio\\ArticuloNegocio.cs",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\Git repo WinForms\\tp-winform-equipo-25A\\negocio\\ArticuloNegocio.cs",
+              "RelativeToolTip": "negocio\\ArticuloNegocio.cs",
+              "ViewState": "AgIAAI4AAAAAAAAAAAAQwJEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T05:51:38.893Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Imagen.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\Git repo WinForms\\tp-winform-equipo-25A\\dominio\\Imagen.cs",
+              "RelativeDocumentMoniker": "dominio\\Imagen.cs",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\Git repo WinForms\\tp-winform-equipo-25A\\dominio\\Imagen.cs",
+              "RelativeToolTip": "dominio\\Imagen.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T05:47:03.527Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmArticulos.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\Git repo WinForms\\tp-winform-equipo-25A\\WindowsFormsApp1\\frmArticulos.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\frmArticulos.cs",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\Git repo WinForms\\tp-winform-equipo-25A\\WindowsFormsApp1\\frmArticulos.cs [Dise\u00F1o]",
+              "RelativeToolTip": "WindowsFormsApp1\\frmArticulos.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T01:43:59.914Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmArticulos.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\Git repo WinForms\\tp-winform-equipo-25A\\WindowsFormsApp1\\frmArticulos.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\frmArticulos.cs",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\Git repo WinForms\\tp-winform-equipo-25A\\WindowsFormsApp1\\frmArticulos.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\frmArticulos.cs",
+              "ViewState": "AgIAAPkAAAAAAAAAAAAAACoBAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T21:53:10.134Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "frmAgregarMarca.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\Git repo WinForms\\tp-winform-equipo-25A\\WindowsFormsApp1\\frmAgregarMarca.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\frmAgregarMarca.cs",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\Programacion III\\Grupo 25A\\tp-winform-equipo-25A-master\\WindowsFormsApp1\\frmAgregarMarca.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\Programacion III\\Grupo 25A\\tp-winform-equipo-25A-master\\WindowsFormsApp1\\frmAgregarMarca.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-28T15:48:06.059Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AccesoDatos.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\Git repo WinForms\\tp-winform-equipo-25A\\negocio\\AccesoDatos.cs",
+              "RelativeDocumentMoniker": "negocio\\AccesoDatos.cs",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\Git repo WinForms\\tp-winform-equipo-25A\\negocio\\AccesoDatos.cs",
+              "RelativeToolTip": "negocio\\AccesoDatos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T22:21:25.605Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Articulo.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\Git repo WinForms\\tp-winform-equipo-25A\\dominio\\Articulo.cs",
+              "RelativeDocumentMoniker": "dominio\\Articulo.cs",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\Git repo WinForms\\tp-winform-equipo-25A\\dominio\\Articulo.cs",
+              "RelativeToolTip": "dominio\\Articulo.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T22:25:04.904Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "frmAgregarCategoria.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\Git repo WinForms\\tp-winform-equipo-25A\\WindowsFormsApp1\\frmAgregarCategoria.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\frmAgregarCategoria.cs",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\Programacion III\\Grupo 25A\\tp-winform-equipo-25A-master\\WindowsFormsApp1\\frmAgregarCategoria.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\Programacion III\\Grupo 25A\\tp-winform-equipo-25A-master\\WindowsFormsApp1\\frmAgregarCategoria.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-28T15:48:04.173Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "frmAgregarArticulo.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\Git repo WinForms\\tp-winform-equipo-25A\\WindowsFormsApp1\\frmAgregarArticulo.Designer.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\frmAgregarArticulo.Designer.cs",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\Git repo WinForms\\tp-winform-equipo-25A\\WindowsFormsApp1\\frmAgregarArticulo.Designer.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\frmAgregarArticulo.Designer.cs",
+              "ViewState": "AgIAALgAAAAAAAAAAAAgwLgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-28T15:47:40.725Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "frmArticulos.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\Git repo WinForms\\tp-winform-equipo-25A\\WindowsFormsApp1\\frmArticulos.Designer.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\frmArticulos.Designer.cs",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\Git repo WinForms\\tp-winform-equipo-25A\\WindowsFormsApp1\\frmArticulos.Designer.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\frmArticulos.Designer.cs",
+              "ViewState": "AgIAANIAAAAAAAAAAAAgwOIAAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-29T15:39:04.86Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "frmArticulos.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Casa\\Desktop\\UTN\\3re cuatrimestre\\Programacion III\\Proyectos\\Actividad 2\\tp-winform-equipo-25-A\\TPWinForm_equipo-25A\\tp-winform-equipo-25A\\WindowsFormsApp1\\frmArticulos.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp1\\frmArticulos.cs",
-              "ToolTip": "C:\\Users\\Casa\\Desktop\\UTN\\3re cuatrimestre\\Programacion III\\Proyectos\\Actividad 2\\tp-winform-equipo-25-A\\TPWinForm_equipo-25A\\tp-winform-equipo-25A\\WindowsFormsApp1\\frmArticulos.cs [Design]",
-              "RelativeToolTip": "WindowsFormsApp1\\frmArticulos.cs [Design]",
+              "DocumentIndex": 17,
+              "Title": "Categoria.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\Git repo WinForms\\tp-winform-equipo-25A\\dominio\\Categoria.cs",
+              "RelativeDocumentMoniker": "dominio\\Categoria.cs",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\Git repo WinForms\\tp-winform-equipo-25A\\dominio\\Categoria.cs",
+              "RelativeToolTip": "dominio\\Categoria.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T01:43:59.914Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-09-23T22:25:07.438Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "MarcaNegocio.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\Git repo WinForms\\tp-winform-equipo-25A\\negocio\\MarcaNegocio.cs",
+              "RelativeDocumentMoniker": "negocio\\MarcaNegocio.cs",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\Git repo WinForms\\tp-winform-equipo-25A\\negocio\\MarcaNegocio.cs",
+              "RelativeToolTip": "negocio\\MarcaNegocio.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T22:25:13.016Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\Git repo WinForms\\tp-winform-equipo-25A\\WindowsFormsApp1\\Program.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\Program.cs",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\Git repo WinForms\\tp-winform-equipo-25A\\WindowsFormsApp1\\Program.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T04:53:28.263Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "frmAgregarArticulo.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\Git repo WinForms\\tp-winform-equipo-25A\\WindowsFormsApp1\\frmAgregarArticulo.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\frmAgregarArticulo.cs",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\Git repo WinForms\\tp-winform-equipo-25A\\WindowsFormsApp1\\frmAgregarArticulo.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\frmAgregarArticulo.cs",
+              "ViewState": "AgIAAKgAAAAAAAAAAAAqwK0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T21:45:21.758Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CategoriaNegocio.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\Desktop\\Git repo WinForms\\tp-winform-equipo-25A\\negocio\\CategoriaNegocio.cs",
+              "RelativeDocumentMoniker": "negocio\\CategoriaNegocio.cs",
+              "ToolTip": "C:\\Users\\pc\\Desktop\\Git repo WinForms\\tp-winform-equipo-25A\\negocio\\CategoriaNegocio.cs",
+              "RelativeToolTip": "negocio\\CategoriaNegocio.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-28T14:59:19.139Z"
             }
           ]
         }

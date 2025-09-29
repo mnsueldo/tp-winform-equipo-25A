@@ -11,17 +11,22 @@ using System.Windows.Forms;
 using dominio;
 
 namespace WindowsFormsApp1
+
+
 {
     public partial class frmArticulos : Form
     {
         private List<Articulo> listaArticulos;
+        private List<Imagen> listaImagenes;
+        private int indiceImagenActual = 0;
+
         public frmArticulos()
         {
             InitializeComponent();
         }
         private void ocultarColumnas()
         {
-            dgvArticulos.Columns["Id"].Visible = false;
+            dgvArticulos.Columns["Id"].Visible = true;
             dgvArticulos.Columns["UrlImagen"].Visible = false;
            
         }
@@ -263,12 +268,84 @@ namespace WindowsFormsApp1
                 return;
             }
 
-            frmDetallesArticulos agregar = new frmDetallesArticulos(seleccionado);
+            frmDetallesArticulos agregar = new frmDetallesArticulos(seleccionado, listaImagenes);
             agregar.ShowDialog(this);
             cargar();
             
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void dgvArticulos_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if(e.RowIndex >= 0)
+            {
+                DataGridViewRow fila = dgvArticulos.Rows[e.RowIndex];
+                int idArticulo = Convert.ToInt32(fila.Cells["id"].Value);
+                if(idArticulo != null)
+                {
+                    ArticuloNegocio artNegocio = new ArticuloNegocio();
+                    listaImagenes = artNegocio.getImagenes(idArticulo);
+                    indiceImagenActual = 0;
+                    mostrarImagenActual();
+
+                }
+            }
+        }
+
+        private void mostrarImagenActual()
+        {
+            if (listaImagenes != null && listaImagenes.Count > 0)
+            {
+                try 
+                {
+                    pictureBox1.Load(listaImagenes[indiceImagenActual].ImagenUrl);
+                }
+
+                catch(Exception ex)
+                {
+                    pictureBox1.Load("https://efectocolibri.com/wp-content/uploads/2021/01/placeholder.png");
+                }
+            }
+            else
+            {
+                pictureBox1.Load("https://efectocolibri.com/wp-content/uploads/2021/01/placeholder.png");
+            }
+        }
+
+        private void btnAdelante_Click(object sender, EventArgs e)
+        {
+            if(listaImagenes != null && indiceImagenActual < listaImagenes.Count - 1)
+            {
+                indiceImagenActual++;
+                mostrarImagenActual();
+            }
+            else if(listaImagenes != null && indiceImagenActual == listaImagenes.Count - 1)
+            {
+                indiceImagenActual = 0;
+                mostrarImagenActual();
+            }
+        }
+
+        private void btnAtras_Click(object sender, EventArgs e)
+        {
+            if(listaImagenes != null && indiceImagenActual > 0)
+            {
+                indiceImagenActual--;
+                mostrarImagenActual();
+            }
+            else if(listaImagenes != null && indiceImagenActual == 0)
+            {
+                indiceImagenActual = listaImagenes.Count - 1;
+                mostrarImagenActual();
+            }
+        }
     }
+
+
 
 }
 

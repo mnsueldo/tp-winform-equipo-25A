@@ -41,3 +41,47 @@ C:\Users\Casa\Desktop\UTN\3re cuatrimestre\Programacion III\Proyectos\Actividad 
 C:\Users\Casa\Desktop\UTN\3re cuatrimestre\Programacion III\Proyectos\Actividad 2\tp-winform-equipo-25-A\TPWinForm_equipo-25A\tp-winform-equipo-25A\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\Casa\Desktop\UTN\3re cuatrimestre\Programacion III\Proyectos\Actividad 2\tp-winform-equipo-25-A\TPWinForm_equipo-25A\tp-winform-equipo-25A\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
 C:\Users\Casa\Desktop\UTN\3re cuatrimestre\Programacion III\Proyectos\Actividad 2\tp-winform-equipo-25-A\TPWinForm_equipo-25A\tp-winform-equipo-25A\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmDetallesArticulos.resources
+C:\Users\pc\Desktop\Programacion III\Grupo 25A\tp-winform-equipo-25A-master\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\pc\Desktop\Programacion III\Grupo 25A\tp-winform-equipo-25A-master\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\pc\Desktop\Programacion III\Grupo 25A\tp-winform-equipo-25A-master\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\pc\Desktop\Programacion III\Grupo 25A\tp-winform-equipo-25A-master\WindowsFormsApp1\bin\Debug\dominio.dll
+C:\Users\pc\Desktop\Programacion III\Grupo 25A\tp-winform-equipo-25A-master\WindowsFormsApp1\bin\Debug\negocio.dll
+C:\Users\pc\Desktop\Programacion III\Grupo 25A\tp-winform-equipo-25A-master\WindowsFormsApp1\bin\Debug\dominio.pdb
+C:\Users\pc\Desktop\Programacion III\Grupo 25A\tp-winform-equipo-25A-master\WindowsFormsApp1\bin\Debug\negocio.pdb
+C:\Users\pc\Desktop\Programacion III\Grupo 25A\tp-winform-equipo-25A-master\WindowsFormsApp1\obj\Debug\winform-app.csproj.AssemblyReference.cache
+C:\Users\pc\Desktop\Programacion III\Grupo 25A\tp-winform-equipo-25A-master\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe.config
+C:\Users\pc\Desktop\Programacion III\Grupo 25A\tp-winform-equipo-25A-master\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmAgregarArticulo.resources
+C:\Users\pc\Desktop\Programacion III\Grupo 25A\tp-winform-equipo-25A-master\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmAgregarCategoria.resources
+C:\Users\pc\Desktop\Programacion III\Grupo 25A\tp-winform-equipo-25A-master\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmAgregarMarca.resources
+C:\Users\pc\Desktop\Programacion III\Grupo 25A\tp-winform-equipo-25A-master\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmArticulos.resources
+C:\Users\pc\Desktop\Programacion III\Grupo 25A\tp-winform-equipo-25A-master\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmCategorias.resources
+C:\Users\pc\Desktop\Programacion III\Grupo 25A\tp-winform-equipo-25A-master\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmDetallesArticulos.resources
+C:\Users\pc\Desktop\Programacion III\Grupo 25A\tp-winform-equipo-25A-master\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmMarcas.resources
+C:\Users\pc\Desktop\Programacion III\Grupo 25A\tp-winform-equipo-25A-master\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\pc\Desktop\Programacion III\Grupo 25A\tp-winform-equipo-25A-master\WindowsFormsApp1\obj\Debug\winform-app.csproj.GenerateResource.cache
+C:\Users\pc\Desktop\Programacion III\Grupo 25A\tp-winform-equipo-25A-master\WindowsFormsApp1\obj\Debug\winform-app.csproj.CoreCompileInputs.cache
+C:\Users\pc\Desktop\Programacion III\Grupo 25A\tp-winform-equipo-25A-master\WindowsFormsApp1\obj\Debug\winform-.0F641084.Up2Date
+C:\Users\pc\Desktop\Programacion III\Grupo 25A\tp-winform-equipo-25A-master\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\pc\Desktop\Programacion III\Grupo 25A\tp-winform-equipo-25A-master\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\pc\Desktop\Git repo WinForms\tp-winform-equipo-25A\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\pc\Desktop\Git repo WinForms\tp-winform-equipo-25A\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\pc\Desktop\Git repo WinForms\tp-winform-equipo-25A\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\pc\Desktop\Git repo WinForms\tp-winform-equipo-25A\WindowsFormsApp1\bin\Debug\dominio.dll
+C:\Users\pc\Desktop\Git repo WinForms\tp-winform-equipo-25A\WindowsFormsApp1\bin\Debug\negocio.dll
+C:\Users\pc\Desktop\Git repo WinForms\tp-winform-equipo-25A\WindowsFormsApp1\bin\Debug\dominio.pdb
+C:\Users\pc\Desktop\Git repo WinForms\tp-winform-equipo-25A\WindowsFormsApp1\bin\Debug\negocio.pdb
+C:\Users\pc\Desktop\Git repo WinForms\tp-winform-equipo-25A\WindowsFormsApp1\obj\Debug\winform-app.csproj.AssemblyReference.cache
+C:\Users\pc\Desktop\Git repo WinForms\tp-winform-equipo-25A\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe.config
+C:\Users\pc\Desktop\Git repo WinForms\tp-winform-equipo-25A\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmAgregarArticulo.resources
+C:\Users\pc\Desktop\Git repo WinForms\tp-winform-equipo-25A\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmAgregarCategoria.resources
+C:\Users\pc\Desktop\Git repo WinForms\tp-winform-equipo-25A\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmAgregarMarca.resources
+C:\Users\pc\Desktop\Git repo WinForms\tp-winform-equipo-25A\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmArticulos.resources
+C:\Users\pc\Desktop\Git repo WinForms\tp-winform-equipo-25A\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmCategorias.resources
+C:\Users\pc\Desktop\Git repo WinForms\tp-winform-equipo-25A\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmDetallesArticulos.resources
+C:\Users\pc\Desktop\Git repo WinForms\tp-winform-equipo-25A\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmMarcas.resources
+C:\Users\pc\Desktop\Git repo WinForms\tp-winform-equipo-25A\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\pc\Desktop\Git repo WinForms\tp-winform-equipo-25A\WindowsFormsApp1\obj\Debug\winform-app.csproj.GenerateResource.cache
+C:\Users\pc\Desktop\Git repo WinForms\tp-winform-equipo-25A\WindowsFormsApp1\obj\Debug\winform-app.csproj.CoreCompileInputs.cache
+C:\Users\pc\Desktop\Git repo WinForms\tp-winform-equipo-25A\WindowsFormsApp1\obj\Debug\winform-.0F641084.Up2Date
+C:\Users\pc\Desktop\Git repo WinForms\tp-winform-equipo-25A\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\pc\Desktop\Git repo WinForms\tp-winform-equipo-25A\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
