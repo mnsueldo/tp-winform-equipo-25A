@@ -273,19 +273,14 @@ namespace WindowsFormsApp1
             cargar();
             
         }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            
-        }
-
+               
         private void dgvArticulos_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if(e.RowIndex >= 0)
             {
                 DataGridViewRow fila = dgvArticulos.Rows[e.RowIndex];
                 int idArticulo = Convert.ToInt32(fila.Cells["id"].Value);
-                if(idArticulo != null)
+                if(idArticulo != 0)
                 {
                     ArticuloNegocio artNegocio = new ArticuloNegocio();
                     listaImagenes = artNegocio.getImagenes(idArticulo);

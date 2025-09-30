@@ -107,7 +107,7 @@
             // 
             // pbxDetalles
             // 
-            this.pbxDetalles.Location = new System.Drawing.Point(106, 219);
+            this.pbxDetalles.Location = new System.Drawing.Point(133, 219);
             this.pbxDetalles.Name = "pbxDetalles";
             this.pbxDetalles.Size = new System.Drawing.Size(316, 230);
             this.pbxDetalles.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -116,22 +116,22 @@
             // 
             // btnSiguiente
             // 
-            this.btnSiguiente.Location = new System.Drawing.Point(307, 511);
+            this.btnSiguiente.Location = new System.Drawing.Point(334, 511);
             this.btnSiguiente.Name = "btnSiguiente";
             this.btnSiguiente.Size = new System.Drawing.Size(75, 23);
             this.btnSiguiente.TabIndex = 8;
-            this.btnSiguiente.Text = "siguiente";
+            this.btnSiguiente.Text = "Siguiente";
             this.btnSiguiente.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnSiguiente.UseVisualStyleBackColor = true;
             this.btnSiguiente.Click += new System.EventHandler(this.btnSiguiente_Click);
             // 
             // btnAtras
             // 
-            this.btnAtras.Location = new System.Drawing.Point(160, 511);
+            this.btnAtras.Location = new System.Drawing.Point(187, 511);
             this.btnAtras.Name = "btnAtras";
             this.btnAtras.Size = new System.Drawing.Size(75, 23);
             this.btnAtras.TabIndex = 9;
-            this.btnAtras.Text = "atras";
+            this.btnAtras.Text = "Atrás";
             this.btnAtras.UseVisualStyleBackColor = true;
             this.btnAtras.Click += new System.EventHandler(this.btnAtras_Click_1);
             // 

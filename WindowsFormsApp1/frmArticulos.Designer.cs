@@ -223,8 +223,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(384, 297);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 18;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureBox1.TabStop = false;           
             // 
             // btnAtras
             // 
@@ -232,7 +231,7 @@
             this.btnAtras.Name = "btnAtras";
             this.btnAtras.Size = new System.Drawing.Size(75, 23);
             this.btnAtras.TabIndex = 19;
-            this.btnAtras.Text = "atras";
+            this.btnAtras.Text = "Atrás";
             this.btnAtras.UseVisualStyleBackColor = true;
             this.btnAtras.Click += new System.EventHandler(this.btnAtras_Click);
             // 
@@ -242,7 +241,7 @@
             this.btnAdelante.Name = "btnAdelante";
             this.btnAdelante.Size = new System.Drawing.Size(75, 23);
             this.btnAdelante.TabIndex = 20;
-            this.btnAdelante.Text = "siguiente";
+            this.btnAdelante.Text = "Siguiente";
             this.btnAdelante.UseVisualStyleBackColor = true;
             this.btnAdelante.Click += new System.EventHandler(this.btnAdelante_Click);
             // 

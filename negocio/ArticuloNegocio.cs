@@ -16,7 +16,7 @@ namespace negocio
 
             try
             {
-                datos.setearConsulta("SELECT A.Id, A.Codigo, A.Nombre, A.Descripcion, A.UrlImagen, A.Precio, A.IdCategoria, A.IdMarca, C.Descripcion AS Categoria, M.Descripcion AS Marca FROM ARTICULOS AS A INNER JOIN CATEGORIAS AS C ON A.IdCategoria = C.Id INNER JOIN MARCAS AS M ON A.IdMarca = M.Id;");
+                datos.setearConsulta("SELECT A.Id, A.Codigo, A.Nombre, A.Descripcion,A.Precio, A.IdCategoria, A.IdMarca, C.Descripcion AS Categoria, M.Descripcion AS Marca FROM ARTICULOS AS A INNER JOIN CATEGORIAS AS C ON A.IdCategoria = C.Id INNER JOIN MARCAS AS M ON A.IdMarca = M.Id;");
                 datos.ejecutarLectura();
 
                 while (datos.Lector.Read())
@@ -39,6 +39,11 @@ namespace negocio
                     aux.Marca = new Marca();
                     aux.Marca.Id = (int)datos.Lector["IdMarca"];
                     aux.Marca.Descripcion = (string)datos.Lector["Marca"];
+
+
+                    
+                    aux.Imagenes = ObtenerImagenesPorId(aux.Id);
+                    aux.UrlImagen = (aux.Imagenes != null && aux.Imagenes.Count > 0) ? aux.Imagenes[0] : null;
 
                     lista.Add(aux);
                 }
@@ -87,44 +92,83 @@ namespace negocio
                 datos.cerrarConexion();
             }
         }
-
-        public void agregar(Articulo nuevo)
+        
+        public List<string> ObtenerImagenesPorId(int idArticulo)
         {
-            AccesoDatos datos = new AccesoDatos();
-
+            var imagenes = new List<string>();
+            var datos = new AccesoDatos();
             try
             {
-                datos.setearConsulta("INSERT into ARTICULOS (Codigo, Nombre, Descripcion,UrlImagen, IdCategoria,IdMarca,Precio)values(@Codigo, @Nombre, @Descripcion, @UrlImagen, @IdCategoria,@IdMarca,@Precio)");
-                datos.setearParametro("@Codigo", nuevo.Codigo);
-                datos.setearParametro("@Nombre", nuevo.Nombre);
-                datos.setearParametro("@Descripcion", nuevo.Descripcion);
-                datos.setearParametro("@UrlImagen", nuevo.UrlImagen);
-                datos.setearParametro("@IdCategoria", nuevo.Categoria.Id);
-                datos.setearParametro("@IdMarca", nuevo.Marca.Id);
-                datos.setearParametro("@Precio", nuevo.Precio);
+                datos.setearConsulta("SELECT ImagenUrl FROM IMAGENES WHERE IdArticulo = @idArticulo");
+                datos.setearParametro("@idArticulo", idArticulo);
+                datos.ejecutarLectura();
 
-                datos.ejecutarAccion();
+                while (datos.Lector.Read())
+                {
+                    var u = (datos.Lector["ImagenUrl"] as string)?.Trim();
+                    if (!string.IsNullOrWhiteSpace(u))
+                        imagenes.Add(u);
+                }
+
+                return imagenes;
+            }
+            catch (SqlException ex)
+            {
+                throw new ApplicationException("Error de base al listar imágenes del artículo.", ex);
             }
             catch (Exception ex)
             {
-                throw ex;
+                throw new ApplicationException("Error inesperado al listar imágenes del artículo.", ex);
             }
             finally
             {
                 datos.cerrarConexion();
             }
         }
+        public int agregar(Articulo nuevo)
+        {
+            var datos = new AccesoDatos();
+            int idGenerado = 0;
 
+            try
+            {
+                datos.setearConsulta("INSERT INTO ARTICULOS (Codigo, Nombre, Descripcion, IdMarca, IdCategoria, Precio) OUTPUT INSERTED.Id VALUES (@codigo, @nombre, @descripcion, @idMarca, @idCategoria, @precio)");
+                datos.setearParametro("@Codigo", nuevo.Codigo);
+                datos.setearParametro("@Nombre", nuevo.Nombre);
+                datos.setearParametro("@Descripcion", nuevo.Descripcion);
+                datos.setearParametro("@IdCategoria", nuevo.Categoria.Id);
+                datos.setearParametro("@IdMarca", nuevo.Marca.Id);
+                datos.setearParametro("@Precio", nuevo.Precio);
+
+                datos.ejecutarLectura();
+                if (datos.Lector.Read())
+                    idGenerado = Convert.ToInt32(datos.Lector[0]);
+
+                return idGenerado;
+            }
+            catch (SqlException ex)
+            {
+                throw new ApplicationException("Error de base al agregar el artículo.", ex);
+            }
+            catch (Exception ex)
+            {
+                throw new ApplicationException("Error inesperado al agregar el artículo.", ex);
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+        }
+        
         public void modificar(Articulo nuevo)
         {
             AccesoDatos datos = new AccesoDatos();
             try
             {
-                datos.setearConsulta("update ARTICULOS SET Codigo = @codigo, Nombre = @nombre, Descripcion = @descripcion, UrlImagen = @UrlImagen, IdCategoria = @idCategoria, IdMarca = @idMarca, Precio = @precio Where Id = @id");
+                datos.setearConsulta("update ARTICULOS SET Codigo = @codigo, Nombre = @nombre, Descripcion = @descripcion, IdCategoria = @idCategoria, IdMarca = @idMarca, Precio = @precio Where Id = @id");
                 datos.setearParametro("@Codigo", nuevo.Codigo);
                 datos.setearParametro("@Nombre", nuevo.Nombre);
-                datos.setearParametro("@Descripcion", nuevo.Descripcion);
-                datos.setearParametro("@UrlImagen", nuevo.UrlImagen);
+                datos.setearParametro("@Descripcion", nuevo.Descripcion);                
                 datos.setearParametro("@IdCategoria", nuevo.Categoria.Id);
                 datos.setearParametro("@IdMarca", nuevo.Marca.Id);
                 datos.setearParametro("@Precio", nuevo.Precio);
@@ -275,6 +319,30 @@ namespace negocio
             }
 
 
+        }
+
+        public void guardarImagenes(int idArticulo, List<string> imagenes)
+        {
+            if (imagenes == null)
+                return;
+            
+            using (SqlConnection conexion = new SqlConnection("server=.\\SQLEXPRESS; database=CATALOGO_P3_DB; integrated security=true"))
+            {
+                conexion.Open();
+                                
+                var comandoDelete = new SqlCommand("DELETE FROM IMAGENES WHERE IdArticulo = @idArticulo", conexion);
+                comandoDelete.Parameters.AddWithValue("@idArticulo", idArticulo);
+                comandoDelete.ExecuteNonQuery();
+
+               
+                foreach (var url in imagenes)
+                {
+                    var comandoInsert = new SqlCommand("INSERT INTO IMAGENES (IdArticulo, ImagenUrl) VALUES (@idArticulo, @url)", conexion);
+                    comandoInsert.Parameters.AddWithValue("@idArticulo", idArticulo);
+                    comandoInsert.Parameters.AddWithValue("@url", url);
+                    comandoInsert.ExecuteNonQuery();
+                }
+            }
         }
 
 

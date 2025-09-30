@@ -16,9 +16,12 @@ namespace WindowsFormsApp1
     public partial class frmAgregarArticulo : Form
     {
         private Articulo articulo = null;
+        private int indiceImagenActual = 0; // Para saber qué foto estamos viendo ahora
+        private Articulo articuloActual = null; // Variable para manejar el artículo actual en la gestión de imágenes
         public frmAgregarArticulo()
         {
             InitializeComponent();
+            articulo = new Articulo();
         }
         public frmAgregarArticulo(Articulo existente) : this()
         {
@@ -34,9 +37,8 @@ namespace WindowsFormsApp1
         private void btnAceptarArticulo_Click(object sender, EventArgs e)
         {
             ArticuloNegocio negocio = new ArticuloNegocio();
+                                   
 
-            // VALIDACIONES
-            
             if (string.IsNullOrWhiteSpace(txtCodigo.Text))
             {
                 MessageBox.Show("El código es obligatorio.");
@@ -78,7 +80,8 @@ namespace WindowsFormsApp1
 
             try
             {
-                
+                if (articulo == null) articulo = new Articulo();
+
                 articulo.Codigo = txtCodigo.Text;
                 articulo.Nombre = txtNombre.Text;
                 articulo.Descripcion = txtDescripcion.Text;
@@ -86,20 +89,30 @@ namespace WindowsFormsApp1
                 
                 articulo.Marca = (Marca)cboMarcas.SelectedItem;
                 articulo.Categoria = (Categoria)cboCategorias.SelectedItem;
-                                
-                
+
+                if (!string.IsNullOrEmpty(url))
+                {
+                    if (articulo.Imagenes == null)
+                        articulo.Imagenes = new List<string>();
+                    if (!articulo.Imagenes.Contains(url))
+                        articulo.Imagenes.Add(url);
+                }
+
+
                 if (articulo.Id != 0)
                 {
-                    negocio.modificar(articulo);                    
+                    negocio.modificar(articulo);
+                    negocio.guardarImagenes(articulo.Id, articulo.Imagenes);
                     MessageBox.Show("Modificado exitosamente");
                 }
                 
                 else
                 {
-                    negocio.agregar(articulo);                    
+                    int nuevoId = negocio.agregar(articulo);
+                    negocio.guardarImagenes(nuevoId, articulo.Imagenes);
                     MessageBox.Show("Agregado exitosamente");
                 }
-                                
+
             }
             catch (Exception ex)
             {
@@ -172,9 +185,95 @@ namespace WindowsFormsApp1
                 
                 MessageBox.Show(ex.ToString());
             }
-                        
+
+            articuloActual = articulo;
+            indiceImagenActual = 0;
+            MostrarImagenActual();          
         }
 
-        
+        private void txtUrlImagen_Leave(object sender, EventArgs e)
+        {
+            cargarImagen(txtUrlImagen.Text);
+        }
+        private void MostrarImagenActual()
+        {
+            
+            if (articulo == null || articulo.Imagenes == null || articulo.Imagenes.Count == 0)
+            {
+                pbxArticulo.Load("https://efectocolibri.com/wp-content/uploads/2021/01/placeholder.png");
+                return;
+            }
+
+            try
+            {
+                
+                pbxArticulo.Load(articulo.Imagenes[indiceImagenActual]);
+            }
+            catch
+            {                
+                pbxArticulo.Load("https://efectocolibri.com/wp-content/uploads/2021/01/placeholder.png");
+            }
+        }
+        private void cargarImagen(string url)
+        {
+            try
+            {                
+                pbxArticulo.Load(url);
+            }
+            catch (Exception)
+            {
+
+                pbxArticulo.Load("https://efectocolibri.com/wp-content/uploads/2021/01/placeholder.png");
+            }
+        }
+
+        private void btnQuitarImagen_Click(object sender, EventArgs e)
+        {
+            
+            if (articulo.Imagenes != null && articulo.Imagenes.Count > 0)
+            {
+                
+                articulo.Imagenes.RemoveAt(indiceImagenActual);
+
+                
+                if (indiceImagenActual >= articulo.Imagenes.Count)
+                    indiceImagenActual = articulo.Imagenes.Count - 1;
+
+                
+                MostrarImagenActual();
+            }
+        }
+
+        private void btnAgregarImagen_Click(object sender, EventArgs e)
+        {
+            string url = txtUrlImagen.Text.Trim();
+            if (!string.IsNullOrEmpty(url))
+            {
+                
+                if (!(url.StartsWith("http://") || url.StartsWith("https://")))
+                {
+                    MessageBox.Show("La URL de la imagen debe comenzar con http:// o https://");
+                    return;
+                }
+                if (articulo.Imagenes == null)
+                    articulo.Imagenes = new List<string>();
+                
+                if (articulo.Imagenes.Contains(url))
+                {
+                    MessageBox.Show("La imagen ya fue agregada.");
+                    return;
+                }
+                
+                articulo.Imagenes.Add(url);
+                
+                indiceImagenActual = articulo.Imagenes.Count - 1;
+                MostrarImagenActual();                
+                txtUrlImagen.Clear();
+            }
+            else
+            {
+                MessageBox.Show("Ingrese una URL de imagen válida.");
+            }
+        }
     }
 }

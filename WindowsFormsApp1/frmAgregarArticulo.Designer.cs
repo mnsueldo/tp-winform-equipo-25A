@@ -44,6 +44,10 @@
             this.lblUrlImagen = new System.Windows.Forms.Label();
             this.lblCategoria = new System.Windows.Forms.Label();
             this.lblMarcas = new System.Windows.Forms.Label();
+            this.pbxArticulo = new System.Windows.Forms.PictureBox();
+            this.btnQuitarImagen = new System.Windows.Forms.Button();
+            this.btnAgregarImagen = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxArticulo)).BeginInit();
             this.SuspendLayout();
             // 
             // btnAceptarArticulo
@@ -100,6 +104,7 @@
             this.txtUrlImagen.Name = "txtUrlImagen";
             this.txtUrlImagen.Size = new System.Drawing.Size(121, 20);
             this.txtUrlImagen.TabIndex = 6;
+            this.txtUrlImagen.Leave += new System.EventHandler(this.txtUrlImagen_Leave);
             // 
             // cboCategorias
             // 
@@ -182,11 +187,43 @@
             this.lblMarcas.TabIndex = 15;
             this.lblMarcas.Text = "Marca";
             // 
+            // pbxArticulo
+            // 
+            this.pbxArticulo.Location = new System.Drawing.Point(399, 83);
+            this.pbxArticulo.Name = "pbxArticulo";
+            this.pbxArticulo.Size = new System.Drawing.Size(323, 220);
+            this.pbxArticulo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxArticulo.TabIndex = 16;
+            this.pbxArticulo.TabStop = false;
+            // 
+            // btnQuitarImagen
+            // 
+            this.btnQuitarImagen.Location = new System.Drawing.Point(580, 324);
+            this.btnQuitarImagen.Name = "btnQuitarImagen";
+            this.btnQuitarImagen.Size = new System.Drawing.Size(120, 25);
+            this.btnQuitarImagen.TabIndex = 17;
+            this.btnQuitarImagen.Text = "Quitar imagen";
+            this.btnQuitarImagen.UseVisualStyleBackColor = true;
+            this.btnQuitarImagen.Click += new System.EventHandler(this.btnQuitarImagen_Click);
+            // 
+            // btnAgregarImagen
+            // 
+            this.btnAgregarImagen.Location = new System.Drawing.Point(424, 324);
+            this.btnAgregarImagen.Name = "btnAgregarImagen";
+            this.btnAgregarImagen.Size = new System.Drawing.Size(120, 25);
+            this.btnAgregarImagen.TabIndex = 18;
+            this.btnAgregarImagen.Text = "Agregar imagen";
+            this.btnAgregarImagen.UseVisualStyleBackColor = true;
+            this.btnAgregarImagen.Click += new System.EventHandler(this.btnAgregarImagen_Click);
+            // 
             // frmAgregarArticulo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(922, 428);
+            this.Controls.Add(this.btnAgregarImagen);
+            this.Controls.Add(this.btnQuitarImagen);
+            this.Controls.Add(this.pbxArticulo);
             this.Controls.Add(this.lblMarcas);
             this.Controls.Add(this.lblCategoria);
             this.Controls.Add(this.lblUrlImagen);
@@ -207,6 +244,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmAgregarArticulo";
             this.Load += new System.EventHandler(this.frmAgregarArticulo_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pbxArticulo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -230,5 +268,8 @@
         private System.Windows.Forms.Label lblUrlImagen;
         private System.Windows.Forms.Label lblCategoria;
         private System.Windows.Forms.Label lblMarcas;
+        private System.Windows.Forms.PictureBox pbxArticulo;
+        private System.Windows.Forms.Button btnQuitarImagen;
+        private System.Windows.Forms.Button btnAgregarImagen;
     }
 }
